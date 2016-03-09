@@ -14,4 +14,5 @@ figure
 imshow(panorama)
 
 %display the image after lens correction
+%only works when there is no extremly bright part in the picture
 img_out=lens(panorama);

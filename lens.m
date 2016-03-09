@@ -1,3 +1,6 @@
+%only works when there is no extremly bright part in the picture, which
+%means indoors and no light in the photo
+
 function img_out=lens(img_in);
 img_out=img_in;
 
@@ -13,6 +16,7 @@ if Y<100
 img_out(:,:,1)=img_in(:,:,1)*x;
 img_out(:,:,2)=img_in(:,:,2)*x;
 img_out(:,:,3)=img_in(:,:,3)*x;
+
 figure,imshow(img_out);
 title('after lens correction')
 
