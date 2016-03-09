@@ -12,3 +12,6 @@ panorama = stitch(panoImages, tforms);
 % display the image
 figure
 imshow(panorama)
+
+%display the image after lens correction
+img_out=lens(panorama);
